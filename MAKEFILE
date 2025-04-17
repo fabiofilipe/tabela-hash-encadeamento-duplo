@@ -1,0 +1,16 @@
+CC = gcc
+CFLAGS = -Wall -Wextra -std=c11 -O2
+
+all: tabela_hash
+
+tabela_hash: hash_table.o main.o
+	$(CC) $(CFLAGS) -o $@ $^
+
+hash_table.o: hash_table.c hash_table.h
+	$(CC) $(CFLAGS) -c hash_table.c
+
+main.o: main.c hash_table.h
+	$(CC) $(CFLAGS) -c main.c
+
+clean:
+	rm -f *.o tabela_hash
