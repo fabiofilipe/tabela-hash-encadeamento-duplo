@@ -1,8 +1,6 @@
 # Prática: Tabela Hash com Encadeamento Separado Duplo
 
 **Disciplina:** Estrutura de Dados  
-**Professor:** Gilberto Farias  
-**Entrega:** 17/04/2025
 
 ## Descrição
 
